@@ -1,0 +1,22 @@
+{
+  "name": "algoscope",
+  "version": "1.0.0",
+  "description": "Interactive Data Structures and Algorithms Visualizer with Custom Inputs and Size Controls",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "algorithms",
+    "data-structures",
+    "visualization",
+    "sorting",
+    "searching",
+    "bst",
+    "heap",
+    "pathfinding",
+    "graph"
+  ],
+  "author": "",
+  "license": "MIT"
+}
