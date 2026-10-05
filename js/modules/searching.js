@@ -157,7 +157,7 @@
       ui.divider(),
       ui.group(custom.root, ui.button('Use values', applyCustom)),
       ui.divider(),
-      ui.group(target.root, ui.button('Random target', randomTarget), ui.button('Search ▶', run, { variant: 'primary' }))
+      ui.group(target.root, ui.button('Random target', randomTarget), ui.button('Run Search', run, { variant: 'primary' }))
     );
 
     const cellsWrap = el('div', { class: 'cells' });
@@ -203,7 +203,7 @@
     function showIdle(msg) {
       player.load([{
         arr: base, hl: {}, ptr: {}, line: null, cmp: 0,
-        msg: msg || `Array of ${base.length} values ready. Enter a target and press "Search ▶".`,
+        msg: msg || `Array of ${base.length} values ready. Enter a target and select "Run Search".`,
       }], { autoplay: false });
     }
 

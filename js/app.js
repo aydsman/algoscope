@@ -16,8 +16,8 @@
   /* ----- Home / Dashboard View ----- */
   function createHomeView() {
     const hero = el('div', { class: 'hero' },
-      el('h1', null, 'AlgoScope — Visualizing ', el('span', null, 'DSA in Real-Time')),
-      el('p', null, 'An interactive playground for exploring fundamental data structures and computer science algorithms. Experiment with custom inputs, tweak data sizes, watch pseudocode synchronization, and scrub through execution step-by-step.')
+      el('h1', null, 'AlgoScope — Data Structures & Algorithms'),
+      el('p', null, 'An interactive environment for exploring fundamental data structures and computer science algorithms. Experiment with custom inputs, adjust data sizes, follow synchronized pseudocode, and inspect execution step-by-step.')
     );
 
     const cardsGrid = el('div', { class: 'cards' });
@@ -37,8 +37,9 @@
           el('h3', null, mod.title)
         ),
         el('p', null, mod.blurb),
-        el('div', { style: { marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent)', fontWeight: '600', fontSize: '13px' } },
-          'Open visualizer →'
+        el('div', { style: { marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--accent)', fontWeight: '500', fontSize: '13px' } },
+          'Open visualizer',
+          el('span', { html: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>` })
         )
       );
       cardsGrid.append(card);

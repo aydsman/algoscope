@@ -210,7 +210,7 @@
       ui.divider(),
       ui.group(
         travSel.root,
-        ui.button('Traverse ▶', doTraverse, { variant: 'success' }),
+        ui.button('Run Traversal', doTraverse, { variant: 'primary' }),
         ui.button('Clear', clearTree)
       )
     );

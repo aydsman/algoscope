@@ -157,7 +157,7 @@
       mazeSel.root,
       ui.divider(),
       ui.group(
-        ui.button('Find path ▶', runSearch, { variant: 'primary' }),
+        ui.button('Find Path', runSearch, { variant: 'primary' }),
         ui.button('Clear path', () => showIdle()),
         ui.button('Clear walls', () => { walls.clear(); weights.clear(); updateGridCellClasses(); showIdle('Obstacles cleared.'); })
       )
@@ -573,7 +573,7 @@
       updateGridCellClasses();
       const frames = [{
         line: null,
-        msg: msg || 'Configure the grid or choose an algorithm, then click "Find path ▶".',
+        msg: msg || 'Configure the grid or choose an algorithm, then select "Find Path".',
         current: null,
         visited: new Set(),
         frontier: new Set(),

@@ -313,7 +313,7 @@
       ui.divider(),
       ui.group(custom.root, ui.button('Use values', applyCustom)),
       ui.divider(),
-      ui.group(ui.button('Sort ▶', run, { variant: 'primary' }))
+      ui.group(ui.button('Run Sort', run, { variant: 'primary' }))
     );
 
     const barsEl = el('div', { class: 'bars' });
@@ -367,7 +367,7 @@
     function showIdle() {
       player.load([{
         arr: base.slice(), sorted: base.map(() => false), hl: {}, line: null, cmp: 0, swp: 0,
-        msg: `Array of ${base.length} values ready. Press "Sort ▶" to visualize ${ALGOS[algo].name}.`,
+        msg: `Array of ${base.length} values ready. Select "Run Sort" to visualize ${ALGOS[algo].name}.`,
       }], { autoplay: false });
     }
 
